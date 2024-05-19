@@ -66,10 +66,7 @@ int is_valid(Node* n){
             }
          for (num = 1; num < 10; num++)
             {
-               if (fila_aux[num] != 1)
-               {
-                  return 0;
-               }
+               if (fila_aux[num]  < 1 || col_aux[num] > 1) return 0;
             }
             
       }
