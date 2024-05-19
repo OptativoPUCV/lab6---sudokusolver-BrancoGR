@@ -49,3 +49,32 @@ Sun 19 May 2024 01:27:42 AM UTC:
  tests:  4|3
 total_score: 30/70
 02e6a2e
+Sun 19 May 2024 01:35:38 AM UTC: 
+ sudoku.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:64:29: error: ‘sudo’ undeclared (first use in this function)
+   64 |                   col_aux[n-sudo[col][filaa]++;]
+      |                             ^~~~
+sudoku.c:64:29: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:64:39: error: ‘filaa’ undeclared (first use in this function); did you mean ‘fila’?
+   64 |                   col_aux[n-sudo[col][filaa]++;]
+      |                                       ^~~~~
+      |                                       fila
+sudoku.c:64:47: error: expected ‘]’ before ‘;’ token
+   64 |                   col_aux[n-sudo[col][filaa]++;]
+      |                                               ^
+      |                                               ]
+sudoku.c:64:49: error: expected ‘;’ before ‘}’ token
+   64 |                   col_aux[n-sudo[col][filaa]++;]
+      |                                                 ^
+      |                                                 ;
+   65 |                }
+      |                ~                                 
+sudoku.c:48:35: error: unused variable ‘cuad_aux’ [-Werror=unused-variable]
+   48 |    int fila_aux[10], col_aux[10], cuad_aux[10];
+      |                                   ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ecbdd19
