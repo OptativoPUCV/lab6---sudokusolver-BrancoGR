@@ -72,7 +72,7 @@ int is_valid(Node* n){
       }
    for (int box_fil = 0; box_fil < 9; box_fil += 3) {
       for (int box_col = 0; box_col < 9; box_col += 3) {
-         for (num = 1; num < 10; num++) {
+         for (num = 0; num < 9; num++) {
             box_aux[num] = 0;
          }
          for (fila = 0; fila < 3; fila++) {
