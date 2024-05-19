@@ -78,3 +78,29 @@ sudoku.c:48:35: error: unused variable ‘cuad_aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ecbdd19
+Sun 19 May 2024 01:36:19 AM UTC: 
+ sudoku.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:64:47: error: expected ‘]’ before ‘;’ token
+   64 |                   col_aux[n->sudo[col][fila]++;
+      |                                               ^
+      |                                               ]
+sudoku.c:64:26: error: value computed is not used [-Werror=unused-value]
+   64 |                   col_aux[n->sudo[col][fila]++;
+      |                   ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+   65 |                }
+      |                ~          
+sudoku.c:64:48: error: expected ‘;’ before ‘}’ token
+   64 |                   col_aux[n->sudo[col][fila]++;
+      |                                                ^
+      |                                                ;
+   65 |                }
+      |                ~                                
+sudoku.c:48:35: error: unused variable ‘cuad_aux’ [-Werror=unused-variable]
+   48 |    int fila_aux[10], col_aux[10], cuad_aux[10];
+      |                                   ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+88e0280
