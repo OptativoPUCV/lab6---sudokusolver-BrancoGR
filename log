@@ -8,3 +8,14 @@ Sun 19 May 2024 01:22:28 AM UTC:
  tests:  2|4
 total_score: 15/70
 72eab3b
+Sun 19 May 2024 01:23:28 AM UTC: 
+ sudoku.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:73:1: error: control reaches end of non-void function [-Werror=return-type]
+   73 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+89b9b5b
