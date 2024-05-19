@@ -49,7 +49,7 @@ int is_valid(Node* n){
    
    for (fila = 0; fila < 9; fila++)
       {
-         for (num = 0; num < 9; num++)
+         for (num = 0; num < 10; num++)
             {
                fila_aux[num] = col_aux[num] = 0;
             }
