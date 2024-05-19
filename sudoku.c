@@ -61,7 +61,7 @@ int is_valid(Node* n){
                }
                if (n->sudo[col][fila] != 0)
                {
-                  col_aux[n->sudo[col][fila]++;
+                  col_aux[n->sudo[col][fila]]++;
                }
             }
          for (num = 1; num < 10; num++)
