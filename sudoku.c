@@ -59,7 +59,7 @@ int is_valid(Node* n){
                {
                   fila_aux[n->sudo[fila][col]]++;
                }
-               else if (n->sudo[col][fila] != 0)
+               if (n->sudo[col][fila] != 0)
                {
                   col_aux[n->sudo[col][fila]++;
                }
